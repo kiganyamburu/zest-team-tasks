@@ -6,6 +6,7 @@ import { KanbanColumn } from './KanbanColumn';
 import { TaskForm } from './TaskForm';
 import { Task } from './TaskCard';
 import { Badge } from '@/components/ui/badge';
+import { ThemeToggle } from './ThemeToggle';
 
 // Sample data
 const sampleTasks: Task[] = [
@@ -148,10 +149,13 @@ export function TaskDashboard() {
               Manage your projects with drag-and-drop simplicity
             </p>
           </div>
-          <Button onClick={() => handleAddTask()} size="lg" className="shadow-elevated">
-            <Plus className="w-5 h-5 mr-2" />
-            New Task
-          </Button>
+          <div className="flex items-center gap-3">
+            <ThemeToggle />
+            <Button onClick={() => handleAddTask()} size="lg" className="shadow-elevated">
+              <Plus className="w-5 h-5 mr-2" />
+              New Task
+            </Button>
+          </div>
         </div>
 
         {/* Statistics Cards */}
