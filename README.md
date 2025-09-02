@@ -1,5 +1,9 @@
 # Zest Team Tasks
 
+<p align="center">
+  <img src="public/placeholder.svg" alt="Zest Team Tasks Screenshot" width="600" />
+</p>
+
 A modern, responsive task management application built with React and TypeScript. This application provides a Kanban-style board for organizing and tracking team tasks with drag-and-drop functionality, task prioritization, and comprehensive project analytics.
 
 ## Features
